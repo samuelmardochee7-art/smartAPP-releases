@@ -1,0 +1,7 @@
+# Fichiers binaires : jamais de conversion des fins de ligne
+*.pdf binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.xlsx binary
+*.zip binary

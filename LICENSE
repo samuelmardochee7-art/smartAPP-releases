@@ -1,0 +1,18 @@
+SmartPresence
+Copyright (c) 2026 Avenié Kissi Samuel Mardochée. Tous droits réservés.
+
+Ce logiciel, son code source, sa documentation, ses images et ses vidéos sont la
+propriété exclusive de leur auteur.
+
+Sauf accord écrit préalable de l'auteur, il est interdit de copier, modifier,
+distribuer, publier, vendre, louer, sous-licencier, décompiler ou désassembler tout ou
+partie de ce logiciel, ainsi que d'en créer des œuvres dérivées.
+
+L'utilisation de l'application installée est réservée aux établissements et aux
+personnes autorisés par l'auteur, dans les conditions convenues avec lui.
+
+Les bibliothèques tierces incluses dans l'application (PySide6/Qt, SQLCipher, OpenCV,
+reportlab, openpyxl, bcrypt, cryptography, Pillow, qrcode, etc.) restent soumises à
+leurs propres licences.
+
+Contact : samuelmardochee7@gmail.com · +225 01 72 75 57 07
