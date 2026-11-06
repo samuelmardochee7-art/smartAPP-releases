@@ -5,8 +5,8 @@ SmartPresence est un projet personnel. Ce bilan compare l'application à son cah
 
 | | |
 |---|---|
-| Date | 4 novembre 2026 |
-| Version | 1.3.0 |
+| Date | 5 novembre 2026 |
+| Version | 1.0.0 |
 | Référence | Cahier des charges v1.0, section 10 |
 | Environnement | Windows 11, Python 3.14.2, PySide6 6.12.0, SQLCipher 4.12.0, Pillow 13.0.0, OpenCV 5.0.0 |
 | Tests automatisés | **287 réussis sur 287** : `.venv\Scripts\python -m pytest` (2 à 3 minutes selon la charge du poste) |
@@ -29,17 +29,17 @@ SmartPresence est un projet personnel. Ce bilan compare l'application à son cah
 
 ### 1.1 Anomalies corrigées
 
-| Version | Anomalie | Gravité | Correction |
-|---|---|---|---|
-| 1.3.0 | Le bip de lecture ne s'entendait pas : l'application utilisait les sons système de Windows, très discrets avec certains modèles de sons | Majeure (F06 : signal sonore à chaque lecture) | L'application joue ses propres sons, nets et distincts |
-| 1.3.0 | « Institut Universitaire d'Abidjan » s'imprimait par défaut sur les cartes et les rapports de toute nouvelle installation | Mineure | Nom demandé au premier lancement, « Mon établissement » par défaut |
-| 1.2.0 | Une restauration interrompue pouvait laisser l'application sans base | Majeure | Données actuelles mises de côté et remises en place en cas d'échec |
-| 1.2.0 | Export Excel puis PDF de 5 000 lignes en 21 s, au-delà du critère de 10 s | Majeure | Styles nommés pour Excel, PDF découpé page par page : 4,3 s |
-| 1.2.0 | Pillow 12.3.0 avait 39 vulnérabilités connues | Majeure | Pillow 13.0.0 |
-| 1.2.0 | Le message « compte bloqué » révélait quels identifiants existent | Mineure | Identifiants inconnus bloqués de la même façon, en base |
-| 1.2.0 | L'import annulait tout pour une ligne refusée ensuite | Mineure | Mêmes contrôles dès l'analyse |
+| Anomalie | Gravité | Correction |
+|---|---|---|
+| Le bip de lecture ne s'entendait pas : l'application utilisait les sons système de Windows, très discrets avec certains modèles de sons | Majeure (F06 : signal sonore à chaque lecture) | L'application joue ses propres sons, nets et distincts |
+| « Institut Universitaire d'Abidjan » s'imprimait par défaut sur les cartes et les rapports de toute nouvelle installation | Mineure | Nom demandé au premier lancement, « Mon établissement » par défaut |
+| Une restauration interrompue pouvait laisser l'application sans base | Majeure | Données actuelles mises de côté et remises en place en cas d'échec |
+| Export Excel puis PDF de 5 000 lignes en 21 s, au-delà du critère de 10 s | Majeure | Styles nommés pour Excel, PDF découpé page par page : 4,3 s |
+| Pillow 12.3.0 avait 39 vulnérabilités connues | Majeure | Pillow 13.0.0 |
+| Le message « compte bloqué » révélait quels identifiants existent | Mineure | Identifiants inconnus bloqués de la même façon, en base |
+| L'import annulait tout pour une ligne refusée ensuite | Mineure | Mêmes contrôles dès l'analyse |
 
-Le détail est dans l'[historique des versions](../CHANGELOG.md).
+Ces anomalies ont été trouvées et corrigées pendant la recette, avant la publication de la version 1.0.0.
 
 ## 2. Scénarios de test clés (section 10)
 
@@ -78,9 +78,9 @@ Choix expliqués dans le [README](../README.md#écarts-par-rapport-au-cahier-des
 ## 5. Contrôles restants sur du vrai matériel
 
 - [x] **Webcam réelle :** les cartes se lisent (contrôle de l'auteur).
-- [ ] **Son :** réécouter le bip de lecture, la validation et le rejet depuis la version 1.3.0.
+- [ ] **Son :** réécouter le bip de lecture, la validation et le rejet.
 - [ ] **Impression :** à 100 %, une carte mesure 85,6 × 54 mm à la règle ; le QR code est lisible par un téléphone.
-- [ ] **Installateur :** installation, lancement et désinstallation de la 1.3.0 ; les données restent dans `%LOCALAPPDATA%\SmartPresence`.
+- [ ] **Installateur :** installation, lancement et désinstallation de la 1.0.0 ; les données restent dans `%LOCALAPPDATA%\SmartPresence`.
 - [ ] **Aide au visage :** un étudiant avec une vraie photo de vous, puis une lecture à la webcam ; la ressemblance doit être forte. Les photos de la démonstration sont des aplats sans visage : l'aide y indique « aucun visage net ».
 - [ ] **Poste modeste :** un PC sous Windows 10 avec 4 Go de mémoire ; les écrans restent fluides et la police Bahnschrift s'affiche.
 - [ ] **Animations désactivées :** avec Paramètres, Accessibilité, Effets visuels, « Effets d'animation » désactivé, l'application fonctionne sans animation.

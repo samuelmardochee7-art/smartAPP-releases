@@ -12,7 +12,7 @@ l'installateur, vous pouvez vérifier qu'il est authentique grâce à son emprei
 publiée avec la version :
 
 ```
-Get-FileHash .\SmartPresence-1.3.0-installation.exe
+Get-FileHash .\SmartPresence-1.0.0-installation.exe
 ```
 
 **Quel ordinateur faut-il ?**

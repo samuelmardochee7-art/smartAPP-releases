@@ -94,7 +94,7 @@ garanties sont assurées directement par la base :
 **Évolutions du schéma.** `PRAGMA user_version` donne la version du schéma (5). `Database`
 applique les migrations de `MIGRATIONS` aux bases existantes ; les ajouts de colonnes sont
 rejouables. Une base neuve reçoit directement `schema.sql`, qui décrit toujours la dernière
-version. Une base en clair (avant la version 1.1) est convertie en base SQLCipher à
+version. Une base en clair (créée sans chiffrement, par exemple par d'anciens outils de développement) est convertie en base SQLCipher à
 l'ouverture, ses photos et justificatifs sont chiffrés, puis les copies en clair supprimées.
 
 **Tables d'audit en ajout seul.** Des déclencheurs refusent toute modification ou suppression

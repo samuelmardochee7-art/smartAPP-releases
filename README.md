@@ -7,11 +7,11 @@ s'affiche en grand. Le surveillant la compare avec la personne présente, puis v
 tentative est inscrite dans un journal infalsifiable. Toutes les données sont **chiffrées**.
 
 > Projet personnel d'Avenié Kissi Samuel Mardochée, réalisé en 12 semaines.
-> Version 1.3.0. Toutes les données et photos présentées sont **fictives**.
+> Version 1.0.0. Toutes les données et photos présentées sont **fictives**.
 
 ![Écran de vérification](docs/captures/clair_verification.png)
 
-🎬 **Vidéo de démonstration** (1 min 30) : [`docs/video/smartpresence_demo.mp4`](docs/video/smartpresence_demo.mp4)
+🎬 **Vidéo de démonstration** (1 min 54, voix off et sous-titres) : [`docs/video/smartpresence_demo.mp4`](docs/video/smartpresence_demo.mp4)
 
 ## Fonctionnalités
 
@@ -76,9 +76,9 @@ Documentation).
 | [Guide rapide : secrétariat](docs/guides/guide_secretariat.md) ([PDF](docs/guides/guide_secretariat.pdf)) | Secrétariat : import, photos, cartes, absences, rapports |
 | [Guide rapide : administrateur](docs/guides/guide_administrateur.md) ([PDF](docs/guides/guide_administrateur.pdf)) | Mise en service, préparation de l'année, routine, incidents |
 | [Questions fréquentes](docs/faq.md) ([PDF](docs/faq.pdf)) | Tout le monde |
-| [Manuel utilisateur](docs/manuel_utilisateur.md) ([PDF](docs/manuel_utilisateur.pdf)) | Référence complète : installation, appel, rapports, sauvegardes, sécurité, dépannage |
+| [Manuel utilisateur](docs/manuel_utilisateur.md) ([PDF](docs/manuel_utilisateur.pdf)) | **Commencez ici.** Pas à pas de l'installation à l'utilisation quotidienne : matériel, installation, premier lancement, préparation de l'année, cartes, appel, rapports, sauvegardes, dépannage |
 | [Obtenir de l'aide](SUPPORT.md) | Signaler un problème ou poser une question |
-| [Historique des versions](CHANGELOG.md) | Nouveautés de chaque version |
+| [Historique des versions](CHANGELOG.md) | Contenu de chaque version |
 
 ### Pour le projet
 
@@ -100,7 +100,7 @@ smartpresence/
 └── data/    Données chiffrées : SQLCipher, coffre de clés, fichiers chiffrés, migrations
 tests/       287 tests automatisés (règles, sécurité, scan, rapports, performance, interface)
 packaging/   PyInstaller et Inno Setup
-scripts/     Données de démonstration, construction, manuel PDF, vidéo, icône
+scripts/     Données de démonstration, construction, manuel PDF, captures, vidéo, icône
 ```
 
 ## Démarrage rapide (développement)
@@ -140,6 +140,22 @@ Les comptes de démonstration sont `admin`, `bkouakou` et `rdiomande` (enseignan
 `pahoua` (surveillant) et `akone` (secrétariat). Leur mot de passe est la constante
 `MOT_DE_PASSE_DEMO` de `scripts/seed_demo.py`.
 
+Pour régénérer les captures d'écran de la documentation (`docs/captures`, thèmes clair et sombre) :
+
+```bash
+.venv\Scripts\python scripts\captures.py
+```
+
+Pour régénérer la vidéo de démonstration (voix off, sous-titres ; voir [le scénario](docs/scenario_video.md)) :
+
+```bash
+.venv\Scripts\python -m pip install -r requirements-video.txt
+```
+
+```bash
+.venv\Scripts\python scripts\video_demo.py
+```
+
 ## Construire l'installateur Windows
 
 ```powershell
@@ -148,7 +164,7 @@ powershell -ExecutionPolicy Bypass -File scripts\construire.ps1
 
 Le script enchaîne les tests, PyInstaller, l'auto-vérification de l'exécutable, le manuel
 PDF, puis l'installateur Inno Setup (si [Inno Setup 6](https://jrsoftware.org/isdl.php) est
-installé). Résultat : `dist\SmartPresence-1.3.0-installation.exe`.
+installé). Résultat : `dist\SmartPresence-1.0.0-installation.exe`.
 
 ## Licence et contact
 

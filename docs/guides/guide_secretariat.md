@@ -1,6 +1,6 @@
 # Guide rapide du secrétariat et de la scolarité
 
-Pour SmartPresence 1.3 : étudiants, photos, cartes, absences et rapports.
+Pour SmartPresence 1.0 : étudiants, photos, cartes, absences et rapports.
 
 ## Inscrire les étudiants
 

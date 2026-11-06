@@ -1,11 +1,11 @@
 # Guide rapide de l'administrateur
 
-Pour SmartPresence 1.3, à garder près du poste d'administration. Le détail de chaque écran est
+Pour SmartPresence 1.0, à garder près du poste d'administration. Le détail de chaque écran est
 dans le manuel utilisateur.
 
 ## Mise en service (une seule fois)
 
-1. **Installer :** lancez `SmartPresence-1.3.0-installation.exe`. Si Windows affiche
+1. **Installer :** lancez `SmartPresence-1.0.0-installation.exe`. Si Windows affiche
    « Windows a protégé votre ordinateur », cliquez sur « Informations complémentaires », puis
    « Exécuter quand même ».
 2. **Créer votre compte administrateur :** il est demandé au premier lancement. Choisissez une

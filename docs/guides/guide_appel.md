@@ -1,6 +1,6 @@
 # Guide rapide pour faire l'appel
 
-Pour les enseignants et les surveillants (SmartPresence 1.3), à imprimer et à garder près du poste
+Pour les enseignants et les surveillants (SmartPresence 1.0), à imprimer et à garder près du poste
 de scan. Raccourcis : **Entrée** valide, **Échap** rejette, **F1** ouvre l'aide, **Ctrl+L** verrouille.
 
 ## Avant le cours
